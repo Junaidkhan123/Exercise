@@ -14,6 +14,7 @@
 		220FDBA92CC2CC2100F53DAF /* ExercisePlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FDBA82CC2CC2100F53DAF /* ExercisePlayTests.swift */; };
 		220FDBB32CC2CC2100F53DAF /* ExercisePlayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FDBB22CC2CC2100F53DAF /* ExercisePlayUITests.swift */; };
 		220FDBB52CC2CC2100F53DAF /* ExercisePlayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FDBB42CC2CC2100F53DAF /* ExercisePlayUITestsLaunchTests.swift */; };
+		22757D0B2CC2D0A900A6D285 /* ExerciseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 22757D0A2CC2D0A900A6D285 /* ExerciseKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22757D0B2CC2D0A900A6D285 /* ExerciseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,7 @@
 				220FDBA72CC2CC2100F53DAF /* ExercisePlayTests */,
 				220FDBB12CC2CC2100F53DAF /* ExercisePlayUITests */,
 				220FDB952CC2CC1F00F53DAF /* Products */,
+				22757D092CC2D0A900A6D285 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +130,13 @@
 			path = ExercisePlayUITests;
 			sourceTree = "<group>";
 		};
+		22757D092CC2D0A900A6D285 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +153,9 @@
 			dependencies = (
 			);
 			name = ExercisePlay;
+			packageProductDependencies = (
+				22757D0A2CC2D0A900A6D285 /* ExerciseKit */,
+			);
 			productName = ExercisePlay;
 			productReference = 220FDB942CC2CC1F00F53DAF /* ExercisePlay.app */;
 			productType = "com.apple.product-type.application";
@@ -582,6 +595,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22757D0A2CC2D0A900A6D285 /* ExerciseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ExerciseKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 220FDB8C2CC2CC1F00F53DAF /* Project object */;
 }

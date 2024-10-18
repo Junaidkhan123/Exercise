@@ -14,6 +14,7 @@
 		220FDB732CC2CB5000F53DAF /* ExerciseDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FDB722CC2CB5000F53DAF /* ExerciseDemoTests.swift */; };
 		220FDB7D2CC2CB5000F53DAF /* ExerciseDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FDB7C2CC2CB5000F53DAF /* ExerciseDemoUITests.swift */; };
 		220FDB7F2CC2CB5000F53DAF /* ExerciseDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FDB7E2CC2CB5000F53DAF /* ExerciseDemoUITestsLaunchTests.swift */; };
+		22757D082CC2D09700A6D285 /* ExerciseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 22757D072CC2D09700A6D285 /* ExerciseKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		220FDB7C2CC2CB5000F53DAF /* ExerciseDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDemoUITests.swift; sourceTree = "<group>"; };
 		220FDB7E2CC2CB5000F53DAF /* ExerciseDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		220FDBC12CC2CC2100F53DAF /* ExercisePlay.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ExercisePlay.xcodeproj; path = ../ExercisePlay/ExercisePlay.xcodeproj; sourceTree = "<group>"; };
+		22757D052CC2D05600A6D285 /* ExerciseKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ExerciseKit; path = ../../Package/ExerciseKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22757D082CC2D09700A6D285 /* ExerciseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,11 +99,13 @@
 		220FDB552CC2CB4F00F53DAF = {
 			isa = PBXGroup;
 			children = (
+				22757D042CC2D02D00A6D285 /* packages */,
 				220FDBC12CC2CC2100F53DAF /* ExercisePlay.xcodeproj */,
 				220FDB602CC2CB4F00F53DAF /* ExerciseDemo */,
 				220FDB712CC2CB5000F53DAF /* ExerciseDemoTests */,
 				220FDB7B2CC2CB5000F53DAF /* ExerciseDemoUITests */,
 				220FDB5F2CC2CB4F00F53DAF /* Products */,
+				22757D062CC2D09700A6D285 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +165,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		22757D042CC2D02D00A6D285 /* packages */ = {
+			isa = PBXGroup;
+			children = (
+				22757D052CC2D05600A6D285 /* ExerciseKit */,
+			);
+			path = packages;
+			sourceTree = "<group>";
+		};
+		22757D062CC2D09700A6D285 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,6 +196,9 @@
 			dependencies = (
 			);
 			name = ExerciseDemo;
+			packageProductDependencies = (
+				22757D072CC2D09700A6D285 /* ExerciseKit */,
+			);
 			productName = ExerciseDemo;
 			productReference = 220FDB5E2CC2CB4F00F53DAF /* ExerciseDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -645,6 +668,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22757D072CC2D09700A6D285 /* ExerciseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ExerciseKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 220FDB562CC2CB4F00F53DAF /* Project object */;
 }
